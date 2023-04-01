@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+svg {
+    fill: white;
+    transform: scale(.6);
+}
+
+.inputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+
+    input {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    button {
+        padding: 1rem 0 1rem .5rem;
+        height: 100%;
+        border: none;
+        background: transparent;
+        margin-right: 1rem;
+        border-left: 1px solid silver;
+        cursor: pointer;
+    }
+}
+
+.App {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background: #272a3f;
+}
+
+input {
+    border: none;
+    background: transparent;
+
+    &:focus {
+        outline: none !important;
+    }
+}
+
+.keys {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .keyBox {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+
+        .groupBox {
+            display: flex;
+
+        }
+
+        .inputBox {
+            border-color: orange;
+        }
+    }
+}
+
+
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .keyBox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-inline: 3rem;
+
+        div {
+            flex: 1;
+            width: 100%;
+            height: auto;
+        }
+
+        .inputBox {
+            border-color: silver;
+        }
+
+
+        textarea {
+            border: none;
+            background: transparent;
+            padding: 1rem 1rem 0 1rem;
+            min-height: 15vh;
+            resize: none;
+
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+    }
+}
